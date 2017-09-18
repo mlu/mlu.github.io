@@ -3,12 +3,18 @@
 <title>Plats nummer 2: Astronomi</title>
 <meta name="description" content="Här kan du läsa mer om himlen och himlakroppar.">
 <link rel="icon" type="image/x-icon" href="https://mlu.github.io/favicon.ico">
+<meta charset="UTF-8">
 </head>
 <html>
 <body>
 <h1>Välkommen till stjärnhimlen</h1>
 <h2>Den hemliga koden finns bakom Saturnus månar.</h1>
+<p>Värdet är: <span id="value1"></span></p>
 <br>
 <p>Länkad från Ruuvitag Eddystone beacon MLU #2.</p>
+<script>
+	var url = document.location.href;
+    document.getElementById("value1").innerHTML = url.substring(url.indexOf("?")+1);
+</script> 
 </body>
 </html>
